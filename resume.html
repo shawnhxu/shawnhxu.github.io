@@ -13,8 +13,10 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/theme-green.css" rel="stylesheet" />
     </head>
 
 
@@ -43,11 +45,11 @@
 
 
         
-        <!-- About Section-->
+        <!-- Resume Section-->
         <section class="page-section portfolio" id="about">
             <div class="container">
 
-                <!-- About Section Heading-->
+                <!-- Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Resume</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-dark">
@@ -55,157 +57,340 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-dark" href="assets/Shawn's Resume.pdf" target="_blank">
+
+                <!-- Download-->
+                <div class="text-center mb-5">
+                    <a class="btn btn-xl btn-outline-dark" href="assets/Shawn-Xu-Resume.pdf" target="_blank" rel="noopener">
                         <i class="fas fa-download me-2"></i>
-                        Download Resume
+                        Download PDF
                     </a>
                 </div>
 
+                <!-- ============ RESUME SHEET ============
+                     All styles scoped under .rz so the site's Bootstrap
+                     cascade cannot reach in and vice versa. -->
+                <style>
+                  .rz {
+                    --rz-forest: #1A3D2E;
+                    --rz-forest-soft: #2E5F49;
+                    --rz-paper: #FAF8F4;
+                    --rz-ink: #1C1C1A;
+                    --rz-muted: #6B6862;
+                    --rz-rule: #D8D5CC;
 
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <h2 class="experience mb-0">Experience</h2>
+                    --rz-display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+                    --rz-body: Georgia, "Iowan Old Style", "Palatino Linotype", Charter, serif;
+                    --rz-meta: "Lato", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
 
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-black fw-bolder mb-2">May 2024 - Present</div>
-                                                <div class="small fw-bolder">Data Analyst (Freelance)</div>
-                                                <div class="small text-muted">DataAnnotationTech</div>
-                                                <div class="small text-muted">Remote</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>  • Engineered code-related prompts to Large Language Models (LLMs). <br>
-                                            • Ensured high standard of conversational AI performance by conducting detailed quality assurance on
-                                            chatbot responses based on accuracy and reasoning. <br>
-                                            • <u><b>Techniques:</b></u> Python, Prompt engineering, Reinforcement Learning, LLMs, Error analysis
-                                            
-                                        </div></div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-black fw-bolder mb-2">May - July 2022</div>
-                                                <div class="small fw-bolder">Student Researcher</div>
-                                                <div class="small text-muted">Dana Farber Cancer Institute</div>
-                                                <div class="small text-muted">& Harvard University</div>
-                                                <div class="small text-muted">Boston, MA</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div> • Cooperated with Yender Li (MD, PhD), under principal investigator Benjamin L. Ebert’s (MD, PhD) guidance. <br>
-                                             • Studied structural functions of degraders through functional proteomics and genomics to profile synthetic degraders.<br>
-                                             • Aided in the discovery of molecular glues that paved a new way in pharmacology to kill cancer cells. <br>
-                                             • Co-authored a publication on Nature in relation to my work: <a href="https://doi.org/10.1101/2023.02.14.528208" style="text-decoration: underline;" target="_blank">https://doi.org/10.1101/2023.02.14.528208</a>. <br>
-                                        </div></div>
-                                    </div>
-                                </div>
-                            </div>
+                    max-width: 8.5in;
+                    margin: 0 auto;
+                    background: var(--rz-paper);
+                    color: var(--rz-ink);
+                    font-family: var(--rz-body);
+                    padding: 52px 56px 58px;
+                    box-shadow: 0 14px 44px rgba(20, 34, 27, .17);
+                    box-sizing: border-box;
+                    text-align: left;
+                  }
+                  .rz *, .rz *::before, .rz *::after { box-sizing: border-box; }
+                  .rz h1, .rz h2, .rz p, .rz ul, .rz li { margin: 0; padding: 0; }
+                  .rz ul { list-style: none; }
 
+                  .rz-head {
+                    display: flex; align-items: flex-end; justify-content: space-between;
+                    gap: 30px; flex-wrap: wrap;
+                  }
+                  .rz-name {
+                    font-family: var(--rz-display);
+                    font-weight: 500; font-size: clamp(34px, 5.6vw, 52px);
+                    line-height: 1.02; letter-spacing: .13em;
+                    text-transform: uppercase;
+                  }
+                  .rz-name .g { display: block; color: var(--rz-ink); }
+                  .rz-name .f { display: block; color: var(--rz-forest); }
+                  .rz-aside {
+                    font-family: var(--rz-meta); text-align: right; font-size: 11px;
+                    letter-spacing: .16em; text-transform: uppercase;
+                    color: var(--rz-muted); line-height: 1.9; padding-bottom: 4px;
+                  }
+                  .rz-aside .role { color: var(--rz-forest); font-weight: 700; }
+                  .rz-hr { border: 0; border-top: 1px solid var(--rz-rule); margin: 17px 0 0; }
+                  .rz-tag {
+                    font-family: var(--rz-meta); font-size: 11px; letter-spacing: .3em;
+                    text-transform: uppercase; color: var(--rz-muted); margin-top: 10px !important;
+                  }
 
-                        <h2 class="experience mb-0">Education</h2>
-                        <!-- Education Section-->
-                        <section>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-black fw-bolder mb-2">2023 - Present</div>
-                                                <div class="mb-2">
-                                                    <div class="small-edu fw-bolder">Georgetown University</div>
-                                                    <div class="small-edu text-muted">Washington, DC</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small-edu text-muted">Master of Science (M.S.)</div>
-                                                    <div class="small-edu text-muted">Data Science and Analytics</div>
-                                                    <div class="small-edu text-muted">GPA: 3.95</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-black fw-bolder mb-2">2019 - 2023</div>
-                                                <div class="mb-2">
-                                                    <div class="small-edu fw-bolder">Boston University</div>
-                                                    <div class="small-edu text-muted">Boston, MA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small-edu text-muted">Bachelor of Science (B.S.)</div>
-                                                    <div class="small-edu text-muted">Biomedical Engineering</div>
-                                                    <div class="small-edu-edu text-muted">GPA: 3.5</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex">
-                                            <div class="feature bg-primary text-black rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-black d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Data Analytics</div></div>
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Data Visualization</div></div>
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Statistical Analysis</div></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Predictive Modeling</div></div>
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Deep Learning</div></div>
-                                            <div class="col"><div class="bg-light rounded-4 p-3">Git & Github</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">R</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL</div></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MATLAB</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
+                  .rz-cols { display: grid; grid-template-columns: 31% 1fr; gap: 0 34px; margin-top: 28px; }
+                  .rz-main { border-left: 1px solid var(--rz-rule); padding-left: 34px; }
+                  .rz-block + .rz-block {
+                    margin-top: 21px; padding-top: 19px; border-top: 1px solid var(--rz-rule);
+                  }
+                  .rz-sec {
+                    font-family: var(--rz-display); font-size: 17px; font-weight: 600;
+                    letter-spacing: .2em; text-transform: uppercase;
+                    color: var(--rz-forest); margin-bottom: 12px !important;
+                  }
+
+                  .rz-contact { display: grid; gap: 9px; }
+                  .rz-contact li { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+                  .rz-contact svg { width: 15px; height: 15px; flex: none; color: var(--rz-forest); }
+                  .rz-contact a { color: var(--rz-ink); text-decoration: none; word-break: break-word; }
+                  .rz-contact a:hover { color: var(--rz-forest); text-decoration: underline; }
+
+                  .rz-edu + .rz-edu { margin-top: 14px; }
+                  .rz-deg  { font-family: var(--rz-meta); font-size: 12.5px; font-weight: 700;
+                             text-transform: uppercase; letter-spacing: .05em; }
+                  .rz-inst { font-size: 13px; margin-top: 2px !important; }
+                  .rz-emeta { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
+                              margin-top: 2px !important; font-variant-numeric: tabular-nums; }
+
+                  .rz-sg + .rz-sg { margin-top: 12px; }
+                  .rz-slabel { font-family: var(--rz-meta); font-size: 10.5px; font-weight: 700;
+                               letter-spacing: .14em; text-transform: uppercase;
+                               color: var(--rz-forest); margin-bottom: 5px !important; }
+                  .rz-slist { font-size: 12.5px; line-height: 1.65; }
+
+                  .rz-summary { font-size: 13.5px; line-height: 1.6; }
+                  .rz-summary + .rz-personal { margin-top: 9px !important; color: var(--rz-muted); }
+
+                  .rz-item + .rz-item { margin-top: 17px; }
+                  .rz-rhead { display: flex; justify-content: space-between; align-items: baseline;
+                              gap: 16px; flex-wrap: wrap; }
+                  .rz-title { font-family: var(--rz-meta); font-size: 13px; font-weight: 700;
+                              letter-spacing: .04em; text-transform: uppercase; }
+                  .rz-date { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
+                             white-space: nowrap; font-variant-numeric: tabular-nums; }
+                  .rz-org { font-size: 13px; font-style: italic; color: var(--rz-forest-soft);
+                            margin-top: 1px !important; }
+
+                  .rz-pts { margin-top: 7px !important; padding-left: 17px !important; list-style: disc !important; }
+                  .rz-pts li { font-size: 13px; line-height: 1.52; margin-bottom: 4px; }
+                  .rz-pts li::marker { color: var(--rz-forest); }
+                  .rz-stack { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
+                              margin-top: 6px !important; line-height: 1.55; }
+                  .rz-stack b { color: var(--rz-forest); font-weight: 700; letter-spacing: .06em; }
+                  .rz-stack a { color: var(--rz-forest); text-decoration: none;
+                                border-bottom: 1px solid var(--rz-rule); }
+                  .rz-stack a:hover { border-bottom-color: var(--rz-forest); }
+
+                  .rz-phead { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+                  .rz-pname { font-family: var(--rz-meta); font-size: 13px; font-weight: 700; }
+                  .rz-plink { font-family: var(--rz-meta); font-size: 11px; color: var(--rz-forest);
+                              text-decoration: none; border-bottom: 1px solid var(--rz-rule); white-space: nowrap; }
+                  .rz-plink:hover { border-bottom-color: var(--rz-forest); }
+
+                  .rz a:focus-visible { outline: 2px solid var(--rz-forest); outline-offset: 3px; border-radius: 2px; }
+
+                  @media (max-width: 767px) {
+                    .rz { padding: 30px 22px 36px; }
+                    .rz-cols { grid-template-columns: 1fr; gap: 0; }
+                    .rz-main { border-left: 0; padding-left: 0; margin-top: 21px;
+                               padding-top: 19px; border-top: 1px solid var(--rz-rule); }
+                    .rz-aside { text-align: left; }
+                  }
+
+                  /* Printing the page yields the resume alone, nothing else. */
+                  @media print {
+                    #mainNav, .footer, .copyright, .page-section-heading,
+                    .divider-custom, .btn { display: none !important; }
+                    .page-section { padding: 0 !important; }
+                    .rz { box-shadow: none; padding: 0; max-width: none; background: #fff; }
+                  }
+                </style>
+
+                <div class="rz">
+
+                  <div class="rz-head">
+                    <h1 class="rz-name">
+                      <span class="g">Shawn</span>
+                      <span class="f">H. Xu</span>
+                    </h1>
+                    <div class="rz-aside">
+                      <div class="role">Data Scientist</div>
+                      <div>San Ramon, California</div>
                     </div>
+                  </div>
+                  <hr class="rz-hr" />
+                  <p class="rz-tag">Data Science &middot; Machine Learning &middot; Analytics</p>
+
+                  <div class="rz-cols">
+
+                    <aside>
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Contact</h2>
+                        <ul class="rz-contact">
+                          <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" /><path d="m3 6 9 7 9-7" /></svg>
+                            <a href="mailto:xu.shawn7@gmail.com">xu.shawn7@gmail.com</a>
+                          </li>
+                          <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z" /></svg>
+                            <a href="tel:+19258586938">925-858-6938</a>
+                          </li>
+                          <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.19 1.35-2.19 2.75V21h-4V9.5Z" /></svg>
+                            <a href="https://www.linkedin.com/in/shawn-xu22" target="_blank" rel="noopener">linkedin.com/in/shawn-xu22</a>
+                          </li>
+                          <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                            <span>San Ramon, CA 94582</span>
+                          </li>
+                        </ul>
+                      </section>
+
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Education</h2>
+                        <div class="rz-edu">
+                          <p class="rz-deg">M.S. Data Science &amp; Analytics</p>
+                          <p class="rz-inst">Georgetown University</p>
+                          <p class="rz-emeta">Aug 2023 &ndash; Dec 2024 &middot; GPA 3.95 / 4.0</p>
+                        </div>
+                        <div class="rz-edu">
+                          <p class="rz-deg">B.S. Biomedical Engineering</p>
+                          <p class="rz-inst">Boston University</p>
+                          <p class="rz-emeta">Sept 2019 &ndash; May 2023 &middot; GPA 3.5 / 4.0</p>
+                          <p class="rz-emeta">Dean&rsquo;s List of Academic Honor</p>
+                        </div>
+                      </section>
+
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Skills</h2>
+                        <div class="rz-sg">
+                          <p class="rz-slabel">Programming</p>
+                          <p class="rz-slist">Python &middot; SQL &middot; R</p>
+                        </div>
+                        <div class="rz-sg">
+                          <p class="rz-slabel">Data &amp; Cloud</p>
+                          <p class="rz-slist">Databricks &middot; BigQuery &middot; GCP &middot; PySpark &middot; Spark</p>
+                        </div>
+                        <div class="rz-sg">
+                          <p class="rz-slabel">ML &amp; Analysis</p>
+                          <p class="rz-slist">PyTorch &middot; Scikit-Learn &middot; Pandas &middot; NumPy</p>
+                        </div>
+                        <div class="rz-sg">
+                          <p class="rz-slabel">Tooling</p>
+                          <p class="rz-slist">Git / GitHub &middot; VS Code</p>
+                        </div>
+                        <div class="rz-sg">
+                          <p class="rz-slabel">Spoken</p>
+                          <p class="rz-slist">English &middot; Mandarin (Conversational)</p>
+                        </div>
+                      </section>
+                    </aside>
+
+                    <div class="rz-main">
+
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Profile</h2>
+                        <p class="rz-summary">
+                          Data scientist with an M.S. in Data Science &amp; Analytics and a biomedical
+                          engineering background, working end-to-end from raw data through modeling
+                          to the services that put results in front of users.
+                        </p>
+                        <p class="rz-summary rz-personal">
+                          Away from the desk: rock climbing, traveling, and gaming &mdash; rogue-likes,
+                          FPS, and ARPGs. Also an active interest in quantitative finance.
+                        </p>
+                      </section>
+
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Work Experience</h2>
+
+                        <div class="rz-item">
+                          <div class="rz-rhead">
+                            <p class="rz-title">Data Scientist</p>
+                            <span class="rz-date">Dec 2024 &ndash; Present</span>
+                          </div>
+                          <p class="rz-org">Albertsons Companies Inc.</p>
+                          <ul class="rz-pts">
+                            <li>Own a large portion of the promotional planning data flow, connecting raw
+                                data sources, model outputs, and final forecasted decisions within a
+                                merchandising platform automating work for 400+ store managers.</li>
+                            <li>Implemented an LLM solution automating promotional execution, eliminating
+                                3 weeks of manual labor per cycle.</li>
+                            <li>Orchestrate pipelines over petabytes of multi-decade retail data
+                                (transactional, hierarchical, allowance, geographic) feeding downstream
+                                forecasting models.</li>
+                            <li>Built API backend services delivering ETL and model outputs to the platform,
+                                powering promotional scenario building, execution, change logging, and
+                                model explainability features.</li>
+                            <li>Partner with 5+ cross-functional teams spanning business analysts, modeling,
+                                promotion execution, frontend, and offshore engineering; onboard new members
+                                onto Databricks, GitHub Enterprise, and Confluence.</li>
+                          </ul>
+                          <p class="rz-stack"><b>Stack</b> &nbsp;Databricks (Lakeflow, Apps, AI/BI, Genie) &middot;
+                             PySpark &middot; BigQuery &middot; GCP &middot; Python &middot; SQL &middot; LLMs &middot; API Development</p>
+                        </div>
+
+                        <div class="rz-item">
+                          <div class="rz-rhead">
+                            <p class="rz-title">Data Analyst</p>
+                            <span class="rz-date">May 2024 &ndash; Dec 2024</span>
+                          </div>
+                          <p class="rz-org">Data Annotation Tech</p>
+                          <ul class="rz-pts">
+                            <li>Engineered code-related prompts for LLM training and evaluated chatbot
+                                responses for accuracy, reasoning, and coding quality.</li>
+                          </ul>
+                          <p class="rz-stack"><b>Stack</b> &nbsp;Python &middot; Prompt Engineering &middot; RLHF &middot;
+                             LLMs &middot; Error Analysis</p>
+                        </div>
+
+                        <div class="rz-item">
+                          <div class="rz-rhead">
+                            <p class="rz-title">Student Researcher / Intern</p>
+                            <span class="rz-date">May &ndash; July 2022</span>
+                          </div>
+                          <p class="rz-org">Dana&ndash;Farber Cancer Institute / Harvard Medical School</p>
+                          <ul class="rz-pts">
+                            <li>Profiled synthetic protein degraders via functional proteomics and genomics,
+                                supporting discovery of molecular glues that kill cancer cells.</li>
+                          </ul>
+                          <p class="rz-stack"><b>Publication</b> &nbsp;Co-author, <em>Nature Chemical Biology</em> &middot;
+                             <a href="https://doi.org/10.1038/s41589-024-01668-4" target="_blank" rel="noopener">10.1038/s41589-024-01668-4</a></p>
+                        </div>
+
+                      </section>
+
+                      <section class="rz-block">
+                        <h2 class="rz-sec">Projects</h2>
+
+                        <div class="rz-item">
+                          <div class="rz-phead">
+                            <p class="rz-pname">Skin Cancer Detection &mdash; Image &amp; Tabular Data</p>
+                            <a class="rz-plink" href="https://github.com/shawnhxu/SCD_with_3D-TBP" target="_blank" rel="noopener">GitHub</a>
+                          </div>
+                          <ul class="rz-pts">
+                            <li>Classified malignant vs. benign skin lesions from 3D total-body images and
+                                tabular data using CNNs and gradient-boosted trees; achieved &gt;90% accuracy.</li>
+                            <li>Countered severe class imbalance with under/over-sampling and ensembled
+                                model predictions across architectures.</li>
+                          </ul>
+                          <p class="rz-stack"><b>Stack</b> &nbsp;PyTorch &middot; CatBoost &middot; LightGBM &middot; ResNet &middot;
+                             EfficientNetB4 &middot; Ensembling &middot; Cross-Validation &middot; pAUC</p>
+                        </div>
+
+                        <div class="rz-item">
+                          <div class="rz-phead">
+                            <p class="rz-pname">StarCraft II Player Performance Analysis</p>
+                            <a class="rz-plink" href="https://github.com/5cminsuhlim/DSAN5300Proj" target="_blank" rel="noopener">GitHub</a>
+                          </div>
+                          <ul class="rz-pts">
+                            <li>Analyzed in-game telemetry from StarCraft II players to model skill rating
+                                (rank) and Actions per Minute.</li>
+                            <li>Benchmarked classification models and applied statistical testing to identify
+                                the strongest predictors of player skill.</li>
+                          </ul>
+                          <p class="rz-stack"><b>Stack</b> &nbsp;Python &middot; R &middot; ANOVA &middot; T-testing &middot;
+                             Logistic Regression &middot; SVM &middot; Random Forest &middot; XGBoost &middot; SMOTE</p>
+                        </div>
+
+                      </section>
+
+                    </div>
+                  </div>
                 </div>
+
             </div>
         </section>
 
@@ -236,7 +421,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">My Contacts</h4>
                         <p class="lead mb-0">
-                            sx131@georgetown.edu
+                            xu.shawn7@gmail.com
                             <br/>
                             (925) 858-6938
                         </p>
@@ -246,7 +431,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Shawn Xu 2024</small></div>
+            <div class="container"><small>Copyright &copy; Shawn Xu 2026</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->

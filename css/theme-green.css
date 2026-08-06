@@ -1,0 +1,129 @@
+/* ============================================================
+   Green theme overlay
+   Loaded AFTER styles.css on every page. Remaps the stock
+   Freelancer palette (navy #2c3e50 / teal #1abc9c / white) to the
+   forest + sage used by the resume, so the whole site reads as one
+   palette. Nothing in styles.css is modified — remove the <link>
+   to this file and the site reverts to the original theme.
+   ============================================================ */
+
+:root {
+  --sg-forest:      #1A3D2E;  /* nav, footer, headings, dividers */
+  --sg-forest-deep: #12291F;  /* copyright bar */
+  --sg-forest-soft: #2E5F49;  /* hover states, overlays */
+  --sg-mint:        #A9D2BB;  /* nav link hover on dark ground */
+  --sg-sage:        #EAF0E8;  /* page ground */
+
+  /* This theme redefines Bootstrap's "primary" as white — it is what
+     paints the masthead and the mobile menu button. Retargeting it to
+     sage carries both along. Only those two elements use it, and
+     .text-primary / .border-primary appear nowhere in the markup. */
+  --bs-primary-rgb: 234, 240, 232;
+
+  /* Project card titles are plain links, so they inherited the theme's
+     teal link colour. Forest keeps them in palette. */
+  --bs-link-color: #1A3D2E;
+  --bs-link-color-rgb: 26, 61, 46;
+  --bs-link-hover-color: #2E5F49;
+  --bs-link-hover-color-rgb: 46, 95, 73;
+}
+
+/* ---------- ground ---------- */
+body {
+  background-color: var(--sg-sage);
+}
+
+/* .text-custom carries the masthead heading and toggler label. */
+.text-custom {
+  color: var(--sg-forest) !important;
+}
+
+/* ---------- navbar ---------- */
+#mainNav.bg-secondary,
+.navbar.bg-secondary,
+.bg-secondary {
+  background-color: var(--sg-forest) !important;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: var(--sg-mint);
+}
+#mainNav .navbar-toggler.bg-primary {
+  background-color: var(--sg-forest-soft) !important;
+}
+
+/* ---------- section headings + star dividers ---------- */
+.text-secondary {
+  color: var(--sg-forest) !important;
+}
+.divider-custom .divider-custom-line {
+  background-color: var(--sg-forest);
+  border-color: var(--sg-forest);
+}
+.divider-custom .divider-custom-icon {
+  color: var(--sg-forest);
+}
+
+/* ---------- buttons ---------- */
+.btn-outline-dark {
+  color: var(--sg-forest);
+  border-color: var(--sg-forest);
+}
+.btn-outline-dark:hover,
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+  background-color: var(--sg-forest);
+  border-color: var(--sg-forest);
+  color: #fff;
+}
+
+/* ---------- masthead avatar ----------
+   shun_frame.png carries an opaque white square behind the gold ring
+   (corner pixel is #FFF at full alpha). Invisible on the old white
+   ground, a white box on sage. Measured: the ring spans x 80..719 of an
+   800px image, so its outer edge sits at exactly 40% of the width.
+   39.8% clips a hair inside it so antialiasing leaves no white fringe. */
+.masthead .masthead-avatar {
+  clip-path: circle(39.8% at 50% 50%);
+}
+
+/* ---------- projects grid ---------- */
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: rgba(46, 95, 73, 0.9);
+}
+.portfolio-modal .btn-close {
+  color: var(--sg-forest-soft);
+}
+
+/* ---------- footer ---------- */
+.footer {
+  background-color: var(--sg-forest);
+}
+.copyright {
+  background-color: var(--sg-forest-deep);
+}
+
+/* Social circles in the footer sit on forest now, not navy. Links here
+   must stay light — the new forest link colour would be invisible. */
+.footer a,
+.footer .btn-outline-light {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.footer a:hover,
+.footer .btn-outline-light:hover {
+  background-color: var(--sg-mint);
+  border-color: var(--sg-mint);
+  color: var(--sg-forest);
+}
+
+/* ---------- modals sit on paper, not stark white ---------- */
+.portfolio-modal .modal-content {
+  background-color: #FAF8F4;
+}
+
+/* The resume sheet already carries its own tokens; it only needs to
+   stop competing with the ground it now floats on. */
+.rz {
+  box-shadow: 0 16px 46px rgba(20, 45, 30, 0.20);
+}
