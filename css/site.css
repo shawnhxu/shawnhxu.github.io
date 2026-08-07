@@ -10,13 +10,17 @@
    js/scripts.js) are no longer linked from any page.
    ============================================================ */
 
+/* The site is dark for everyone, not only for visitors whose system asks
+   for it — so these are plain values rather than a prefers-color-scheme
+   branch. The light palette still exists, in the print block below,
+   because paper is always white. */
 :root {
-  --forest:      #1A3D2E;   /* headings, accents, links */
-  --forest-soft: #2E5F49;   /* org names, hover */
-  --paper:       #FAF8F4;   /* the ground the whole site sits on */
-  --ink:         #1C1C1A;
-  --muted:       #6B6862;
-  --rule:        #D8D5CC;   /* every divider on the site is this hairline */
+  --forest:      #8FBFA6;   /* headings, accents, links */
+  --forest-soft: #A9D2BB;   /* org names, hover */
+  --paper:       #1A1D1B;   /* the ground the whole site sits on */
+  --ink:         #E8E6E0;
+  --muted:       #9A968E;
+  --rule:        #333834;   /* every divider on the site is this hairline */
 
   --display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --body:    Georgia, "Iowan Old Style", "Palatino Linotype", Charter, serif;
@@ -26,18 +30,8 @@
   --measure: 8.5in;
   --gutter: 30px;
 
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --forest:      #8FBFA6;
-    --forest-soft: #A9D2BB;
-    --paper:       #1A1D1B;
-    --ink:         #E8E6E0;
-    --muted:       #9A968E;
-    --rule:        #333834;
-  }
+  /* Tells the browser to draw scrollbars and form controls dark too. */
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -565,6 +559,7 @@ a { color: var(--forest); }
   :root {
     --forest: #1A3D2E; --forest-soft: #2E5F49; --paper: #fff;
     --ink: #1C1C1A; --muted: #55524B; --rule: #C4C1B8;
+    color-scheme: light;
   }
   @page { margin: 0.5in; }
   .nav, .foot, .no-print { display: none !important; }
