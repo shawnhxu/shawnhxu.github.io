@@ -2,425 +2,224 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Shawn's Projects</title>
-        <!-- Favicon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Machine learning and data science projects by Shawn H. Xu." />
+        <meta name="author" content="Shawn H. Xu" />
+        <title>Projects &mdash; Shawn Xu</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/theme-green.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="css/site.css" rel="stylesheet" />
+        <!-- Set before first paint so the cards never flash unstacked. -->
+        <script>document.documentElement.classList.add('js');</script>
+        <script src="js/cards.js" defer></script>
     </head>
 
-
-
-
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Shawn Xu</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-custom rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="projects.html">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="resume.html">Resume</a></li>
-                    </ul>
-                </div>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-inner">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+                <a class="btn-pdf" href="assets/Shawn-Xu-Resume.pdf" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M4 20h16" /></svg>
+                    Download PDF
+                </a>
             </div>
         </nav>
 
+        <main class="wrap">
 
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <header class="head">
+                <h1 class="page-title">Projects</h1>
+            </header>
+            <hr class="rule" />
 
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://github.com/shawnhxu/SCD_with_3D-TBP" style="text-decoration: none;" target="_blank"><h3 class="fw-bolder">Skin Cancer Detection with 3D Full Body Photo and Tabular Metadata</h3></a>
-                                            <p>• Applied 3D total body image and tabular data onto modern Convolution Neural Network (CNN’s) and
-                                                Decision Trees to distinguish malignant skin lesions from benign ones.<br>
-                                                • Employed under and over-sampling to counter the imbalancing of classes in the image dataset.<br>
-                                                • Incorporated an Ensembling strategy to consider all machine learning predictions.<br>
-                                                • Recorded above 90% accuracies in models.<br>
-                                                • <u><b>Techniques:</b></u> PyTorch, CatBoost, LightGBM, Residual Network (ResNet), MobileNetV2, Mobile Neural
-                                                Architecture Search (MNAS) Network, EfficientNetB4, DenseNet, Ensembling, Under/Over Sampling, Feature
-                                                Engineering, Cross-Validation, Partial Area Under ROC Curve (pAUC) <br>
+            <section class="cards">
 
-                                                </p>
-                                            </div>
-                                            <div style="width: 900px;">
-
-                                                <img class="img-fluid" src="https://cdn.synappsehealth.com/res-prod/img/blog/articles/skin_cancer.png" alt="..." />
-                                            </div>
-                                </div>
+                <!-- Card 1 -->
+                <article class="card" id="skin-cancer">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <figure class="card-media">
+                                <img src="https://cdn.synappsehealth.com/res-prod/img/blog/articles/skin_cancer.png" alt="Close-up of a pigmented skin lesion" loading="lazy" />
+                            </figure>
+                            <h2 class="card-title">Skin Cancer Detection with 3D Full-Body Photos &amp; Tabular Metadata</h2>
+                            <p class="card-blurb">Malignant vs. benign skin lesions, read from 3D total-body
+                                photography alongside tabular patient metadata.</p>
+                            <span class="card-hint">Details</span>
+                            <button class="card-toggle" type="button" aria-expanded="false" aria-label="Show details for Skin Cancer Detection"></button>
+                        </div>
+                        <div class="card-face card-back">
+                            <p class="card-eyebrow">Skin Cancer Detection</p>
+                            <ul class="pts">
+                                <li>Applied 3D total-body image and tabular data to modern Convolutional Neural
+                                    Networks and decision trees to distinguish malignant skin lesions from benign ones.</li>
+                                <li>Employed under- and over-sampling to counter class imbalance in the image dataset.</li>
+                                <li>Incorporated an ensembling strategy to consider all machine learning predictions.</li>
+                                <li>Recorded above 90% accuracy across models.</li>
+                            </ul>
+                            <p class="stack"><b>Techniques</b> &nbsp;PyTorch &middot; CatBoost &middot; LightGBM &middot;
+                                ResNet &middot; MobileNetV2 &middot; MNASNet &middot; EfficientNetB4 &middot; DenseNet &middot;
+                                Ensembling &middot; Under/Over Sampling &middot; Feature Engineering &middot;
+                                Cross-Validation &middot; pAUC</p>
+                            <div class="card-actions">
+                                <button class="card-close" type="button">Back</button>
+                                <a class="item-link" href="https://github.com/shawnhxu/SCD_with_3D-TBP" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
+                    </div>
+                </article>
 
-
-                        <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://github.com/mfgeary/dsan6500-project" style="text-decoration: none;" target="_blank"><h3 class="fw-bolder">Detecting & Predicting Lumbar Spine Degenerative Conditions</h2></a>
-                                            <p>• Designed data processing pipeline for MRI dataset to be PyTorch-compatible for CNN training.<br>
-                                                • Evaluated multiple modern Convolutional Neural Network architectures performance in
-                                                detecting and predicting Lumbar Spine Degenerative Conditions.<br>
-                                                • <u><b>Techniques:</b></u> PyTorch, MRI DICOM Image Dataset (.dcm), CNNs, ResNets, Mobile Neural Architecture
-                                                Search (MNAS) Networks, Visual Geometry Group (VGG) Networks <br>
-
-                                                </p>
-                                            </div>
-                                            <div style="width: 900px;">
-
-                                                <img class="img-fluid" src="https://radiologykey.com/wp-content/uploads/2021/04/f14-01-9780323761116.jpg" alt="..." />
-                                            </div>
-                                </div>
+                <!-- Card 2 -->
+                <article class="card" id="lumbar-spine">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <figure class="card-media">
+                                <img src="assets/lumbarspine.jpg" alt="Sagittal MRI of a lumbar spine" loading="lazy" />
+                            </figure>
+                            <h2 class="card-title">Detecting &amp; Predicting Lumbar Spine Degenerative Conditions</h2>
+                            <p class="card-blurb">MRI scans turned into a usable training set, then a benchmark
+                                of CNN architectures run over it.</p>
+                            <span class="card-hint">Details</span>
+                            <button class="card-toggle" type="button" aria-expanded="false" aria-label="Show details for Detecting and Predicting Lumbar Spine Degenerative Conditions"></button>
+                        </div>
+                        <div class="card-face card-back">
+                            <p class="card-eyebrow">Lumbar Spine</p>
+                            <ul class="pts">
+                                <li>Designed a data processing pipeline making an MRI dataset PyTorch-compatible
+                                    for CNN training.</li>
+                                <li>Evaluated the performance of multiple modern Convolutional Neural Network
+                                    architectures in detecting and predicting lumbar spine degenerative conditions.</li>
+                            </ul>
+                            <p class="stack"><b>Techniques</b> &nbsp;PyTorch &middot; MRI DICOM Image Data (.dcm) &middot;
+                                CNNs &middot; ResNets &middot; MNASNets &middot; VGG Networks</p>
+                            <div class="card-actions">
+                                <button class="card-close" type="button">Back</button>
+                                <a class="item-link" href="https://github.com/mfgeary/dsan6500-project" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- Project Card 3-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://github.com/5cminsuhlim/DSAN6600Proj" style="text-decoration: none;" target="_blank"><h2 class="fw-bolder">Art Image Similarity Finder App</h2></a>
-                                            <p>• Utilized multiple computer vision techniques in tandem with Deep Learning models to discover the most
-                                                similar images based on user-chosen image preprocessing steps and user-given input images.<br>
-                                                • Engineered a Streamlit App that takes in a user input image and outputs most similar art pieces.<br>
-                                                • <u><b>Techniques:</b></u> Python, Pytorch, Residual Networks (ResNets), Convolutional Neural Networks (CNNs),
-                                                Deeplake, Streamlit, You Only Look Once (YOLO), Subject Segmentation, Image Embedding <br>
-
-                                                </p>
-                                            </div>
-                                            <div style="width: 900px;">
-
-                                                <img class="img-fluid" src="https://uploads2.wikiart.org/images/edvard-munch/the-scream-1893(2).jpg!Large.jpg" alt="..." />
-                                            </div>
-                                </div>
+                <!-- Card 3 -->
+                <article class="card" id="art-similarity">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <figure class="card-media">
+                                <img src="https://uploads2.wikiart.org/images/edvard-munch/the-scream-1893(2).jpg!Large.jpg" alt="Edvard Munch, The Scream" loading="lazy" />
+                            </figure>
+                            <h2 class="card-title">Art Image Similarity Finder App</h2>
+                            <p class="card-blurb">A Streamlit app that takes an image and returns the art pieces
+                                closest to it.</p>
+                            <span class="card-hint">Details</span>
+                            <button class="card-toggle" type="button" aria-expanded="false" aria-label="Show details for Art Image Similarity Finder App"></button>
+                        </div>
+                        <div class="card-face card-back">
+                            <p class="card-eyebrow">Art Similarity Finder</p>
+                            <ul class="pts">
+                                <li>Used multiple computer vision techniques alongside deep learning models to find
+                                    the most similar images, given a user-chosen preprocessing path and input image.</li>
+                                <li>Engineered a Streamlit app that takes a user input image and returns the most
+                                    similar art pieces.</li>
+                            </ul>
+                            <p class="stack"><b>Techniques</b> &nbsp;Python &middot; PyTorch &middot; ResNets &middot;
+                                CNNs &middot; Deeplake &middot; Streamlit &middot; YOLO &middot; Subject Segmentation &middot;
+                                Image Embedding</p>
+                            <div class="card-actions">
+                                <button class="card-close" type="button">Back</button>
+                                <a class="item-link" href="https://github.com/5cminsuhlim/DSAN6600Proj" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- Project Card 4-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://github.com/5cminsuhlim/DSAN5300Proj" style="text-decoration: none;" target="_blank"><h2 class="fw-bolder">StarCraft2 Player Performance Analysis</h2></a>
-                                            <p>• Conducted an in-depth analysis on in-game telemetry data and skill rating of StarCraft 2 players.<br>
-                                                • Compared machine learning models to predict a player's skill rating (rank) and Actions per Minute (APM).<br>
-                                                • Illustrated the complexity of eSports through statistical analysis and predictive modeling.<br>
-                                                • <u><b>Techniques:</b></u> Python, R Programming, ANOVA Testing, Pair-wise T-testing, Logistic Regression, Support
-                                                Vector Machines (SVMs), Random Forest, XGBoost, SMOTE Balancing, Feature Clustering
-                                                </p>
-                                            </div>
-                                            <div style="width: 900px;">
-
-                                                <img class="img-fluid" src="https://i.pinimg.com/originals/1b/98/06/1b9806b5c001a0ca1bfcc47ce0331938.jpg" alt="..." />
-                                            </div>
-                                </div>
+                <!-- Card 4 -->
+                <article class="card" id="starcraft">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <figure class="card-media">
+                                <img src="https://i.pinimg.com/originals/1b/98/06/1b9806b5c001a0ca1bfcc47ce0331938.jpg" alt="StarCraft II artwork" loading="lazy" />
+                            </figure>
+                            <h2 class="card-title">StarCraft II Player Performance Analysis</h2>
+                            <p class="card-blurb">What in-game telemetry actually predicts about a player's rank
+                                and actions per minute.</p>
+                            <span class="card-hint">Details</span>
+                            <button class="card-toggle" type="button" aria-expanded="false" aria-label="Show details for StarCraft II Player Performance Analysis"></button>
+                        </div>
+                        <div class="card-face card-back">
+                            <p class="card-eyebrow">StarCraft II</p>
+                            <ul class="pts">
+                                <li>Conducted an in-depth analysis of in-game telemetry data and skill rating for
+                                    StarCraft II players.</li>
+                                <li>Compared machine learning models predicting a player's skill rating (rank) and
+                                    Actions per Minute (APM).</li>
+                                <li>Illustrated the complexity of eSports through statistical analysis and
+                                    predictive modeling.</li>
+                            </ul>
+                            <p class="stack"><b>Techniques</b> &nbsp;Python &middot; R &middot; ANOVA &middot;
+                                Pairwise T-testing &middot; Logistic Regression &middot; SVM &middot; Random Forest &middot;
+                                XGBoost &middot; SMOTE &middot; Feature Clustering</p>
+                            <div class="card-actions">
+                                <button class="card-close" type="button">Back</button>
+                                <a class="item-link" href="https://github.com/5cminsuhlim/DSAN5300Proj" target="_blank" rel="noopener">GitHub</a>
                             </div>
                         </div>
+                    </div>
+                </article>
 
-
-                        <!-- Project Card 5-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <a href="https://shawnhxu.github.io/EnhancingSBMM/" style="text-decoration: none;" target="_blank"><h2 class="fw-bolder">Enhancing Skill Based Matchmaking</h2></a>
-                                        <p>• Programmed a classification model in predicting player ranks in the competitive video game League of
-                                            Legends to determine the most impactful rank determining features in R and Python. <br>
-                                            • Concluded an optimal direction for an improved Skill Based Matchmaking algorithm study. <br>
-                                            • <u><b>Techniques:</b></u> Naïve Bayesian Statistics, Exploratory Data Analysis, Data Cleaning, Feature Selection,
-                                            Random Forest, Clustering, Scikit-Learn, Matplotlib<br>
-                                            </p>
-                                    </div>
-                                    <div style="width: 900px;">
-                                        <img class="img-fluid" src="assets/SBMM_img.jpg" alt="..." />
-                                    </div>
-                                </div>
+                <!-- Card 5 -->
+                <article class="card" id="sbmm">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <figure class="card-media">
+                                <img src="assets/SBMM_img.jpg" alt="Neon-lit esports gaming setup" loading="lazy" />
+                            </figure>
+                            <h2 class="card-title">Enhancing Skill-Based Matchmaking</h2>
+                            <p class="card-blurb">Which features decide rank in League of Legends &mdash; and what
+                                that implies for a matchmaking algorithm.</p>
+                            <span class="card-hint">Details</span>
+                            <button class="card-toggle" type="button" aria-expanded="false" aria-label="Show details for Enhancing Skill-Based Matchmaking"></button>
+                        </div>
+                        <div class="card-face card-back">
+                            <p class="card-eyebrow">Skill-Based Matchmaking</p>
+                            <ul class="pts">
+                                <li>Programmed a classification model predicting player ranks in League of Legends
+                                    to determine the most impactful rank-determining features, in R and Python.</li>
+                                <li>Concluded an optimal direction for an improved skill-based matchmaking algorithm.</li>
+                            </ul>
+                            <p class="stack"><b>Techniques</b> &nbsp;Na&iuml;ve Bayes &middot; Exploratory Data Analysis &middot;
+                                Data Cleaning &middot; Feature Selection &middot; Random Forest &middot; Clustering &middot;
+                                Scikit-Learn &middot; Matplotlib</p>
+                            <div class="card-actions">
+                                <button class="card-close" type="button">Back</button>
+                                <a class="item-link" href="https://shawnhxu.github.io/EnhancingSBMM/" target="_blank" rel="noopener">Site</a>
                             </div>
+                        </div>
                     </div>
+                </article>
 
-                        
-                    </div>
-                </div>
+            </section>
+        </main>
 
-            </div>
-        </section>
-
-
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            San Ramon, CA
-                            <br />
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Profiles</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/shawnhxu" target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/shawn-xu22/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Contact</h4>
-                        <p class="lead mb-0">
-                            xu.shawn7@gmail.com
-                            <br/>
-                            (925) 858-6938
-                        </p>
-                    </div>
-                </div>
+        <!-- Footer -->
+        <footer class="foot">
+            <div class="foot-inner">
+                <span>&copy; Shawn Xu 2026</span>
+                <span><a href="mailto:xu.shawn7@gmail.com">xu.shawn7@gmail.com</a></span>
+                <span class="foot-social">
+                    <a href="https://github.com/shawnhxu" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-.95-.01-1.86-3.06.66-3.7-1.3-3.7-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.69 1.14 1.69 1.14.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.47-2.45-.28-5.02-1.23-5.02-5.45 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.4.11-2.92 0 0 .93-.3 3.03 1.13a10.5 10.5 0 0 1 5.52 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.71.77 1.13 1.76 1.13 2.96 0 4.23-2.58 5.16-5.03 5.44.39.34.74 1.01.74 2.04 0 1.48-.01 2.66-.01 3.03 0 .29.2.64.76.53a10.53 10.53 0 0 0 7.51-10.41C23.02 5.24 18.27.5 12 .5Z" /></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shawn-xu22/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.19 1.35-2.19 2.75V21h-4V9.5Z" /></svg>
+                    </a>
+                </span>
             </div>
         </footer>
-
-
-
-
-        
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Shawn Xu 2026</small></div>
-        </div>
-
-
-
-
-
-
-
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

@@ -2,638 +2,249 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Shawn's Resume</title>
-        <!-- Favicon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Resume of Shawn H. Xu — data scientist, M.S. Data Science &amp; Analytics, Georgetown University." />
+        <meta name="author" content="Shawn H. Xu" />
+        <title>Resume &mdash; Shawn Xu</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/theme-green.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="css/site.css" rel="stylesheet" />
     </head>
 
-
-
-
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Shawn Xu</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-custom rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="projects.html">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="resume.html">Resume</a></li>
-                    </ul>
-                </div>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-inner">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" aria-current="page">Resume</a></li>
+                </ul>
+                <a class="btn-pdf" href="assets/Shawn-Xu-Resume.pdf" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M4 20h16" /></svg>
+                    Download PDF
+                </a>
             </div>
         </nav>
 
+        <main class="wrap">
 
-
-
-        
-        <!-- Resume Section-->
-        <section class="page-section portfolio" id="about">
-            <div class="container">
-
-                <!-- Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Resume</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-dark">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <!-- The page masthead is the resume's own masthead. -->
+            <header class="head">
+                <h1 class="name">
+                    <span class="g">Shawn</span>
+                    <span class="f">H. Xu</span>
+                </h1>
+                <div class="head-aside">
+                    <div class="role">Data Scientist</div>
+                    <div>San Ramon, California</div>
                 </div>
+            </header>
+            <hr class="rule" />
+            <p class="tag">Data Science &middot; Machine Learning &middot; Analytics</p>
 
-                <!-- Download-->
-                <div class="text-center mb-5">
-                    <a class="btn btn-xl btn-outline-dark" href="assets/Shawn-Xu-Resume.pdf" target="_blank" rel="noopener">
-                        <i class="fas fa-download me-2"></i>
-                        Download PDF
-                    </a>
-                </div>
+            <div class="rz">
+                <div class="rz-cols">
 
-                <!-- ============ RESUME SHEET ============
-                     All styles scoped under .rz so the site's Bootstrap
-                     cascade cannot reach in and vice versa. -->
-                <style>
-                  .rz {
-                    --rz-forest: #1A3D2E;
-                    --rz-forest-soft: #2E5F49;
-                    --rz-paper: #FAF8F4;
-                    --rz-ink: #1C1C1A;
-                    --rz-muted: #6B6862;
-                    --rz-rule: #D8D5CC;
-
-                    --rz-display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-                    --rz-body: Georgia, "Iowan Old Style", "Palatino Linotype", Charter, serif;
-                    --rz-meta: "Lato", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
-
-                    max-width: 8.5in;
-                    margin: 0 auto;
-                    background: var(--rz-paper);
-                    color: var(--rz-ink);
-                    font-family: var(--rz-body);
-                    padding: 52px 56px 58px;
-                    box-shadow: 0 14px 44px rgba(20, 34, 27, .17);
-                    box-sizing: border-box;
-                    text-align: left;
-                  }
-                  .rz *, .rz *::before, .rz *::after { box-sizing: border-box; }
-                  .rz h1, .rz h2, .rz p, .rz ul, .rz li { margin: 0; padding: 0; }
-                  .rz ul { list-style: none; }
-
-                  .rz-head {
-                    display: flex; align-items: flex-end; justify-content: space-between;
-                    gap: 30px; flex-wrap: wrap;
-                  }
-                  .rz-name {
-                    font-family: var(--rz-display);
-                    font-weight: 500; font-size: clamp(34px, 5.6vw, 52px);
-                    line-height: 1.02; letter-spacing: .13em;
-                    text-transform: uppercase;
-                  }
-                  .rz-name .g { display: block; color: var(--rz-ink); }
-                  .rz-name .f { display: block; color: var(--rz-forest); }
-                  .rz-aside {
-                    font-family: var(--rz-meta); text-align: right; font-size: 11px;
-                    letter-spacing: .16em; text-transform: uppercase;
-                    color: var(--rz-muted); line-height: 1.9; padding-bottom: 4px;
-                  }
-                  .rz-aside .role { color: var(--rz-forest); font-weight: 700; }
-                  .rz-hr { border: 0; border-top: 1px solid var(--rz-rule); margin: 17px 0 0; }
-                  .rz-tag {
-                    font-family: var(--rz-meta); font-size: 11px; letter-spacing: .3em;
-                    text-transform: uppercase; color: var(--rz-muted); margin-top: 10px !important;
-                  }
-
-                  .rz-cols { display: grid; grid-template-columns: 31% 1fr; gap: 0 34px; margin-top: 28px; }
-                  .rz-main { border-left: 1px solid var(--rz-rule); padding-left: 34px; }
-                  .rz-block + .rz-block {
-                    margin-top: 21px; padding-top: 19px; border-top: 1px solid var(--rz-rule);
-                  }
-                  .rz-sec {
-                    font-family: var(--rz-display); font-size: 17px; font-weight: 600;
-                    letter-spacing: .2em; text-transform: uppercase;
-                    color: var(--rz-forest); margin-bottom: 12px !important;
-                  }
-
-                  .rz-contact { display: grid; gap: 9px; }
-                  .rz-contact li { display: flex; align-items: center; gap: 10px; font-size: 13px; }
-                  .rz-contact svg { width: 15px; height: 15px; flex: none; color: var(--rz-forest); }
-                  .rz-contact a { color: var(--rz-ink); text-decoration: none; word-break: break-word; }
-                  .rz-contact a:hover { color: var(--rz-forest); text-decoration: underline; }
-
-                  .rz-edu + .rz-edu { margin-top: 14px; }
-                  .rz-deg  { font-family: var(--rz-meta); font-size: 12.5px; font-weight: 700;
-                             text-transform: uppercase; letter-spacing: .05em; }
-                  .rz-inst { font-size: 13px; margin-top: 2px !important; }
-                  .rz-emeta { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
-                              margin-top: 2px !important; font-variant-numeric: tabular-nums; }
-
-                  .rz-sg + .rz-sg { margin-top: 12px; }
-                  .rz-slabel { font-family: var(--rz-meta); font-size: 10.5px; font-weight: 700;
-                               letter-spacing: .14em; text-transform: uppercase;
-                               color: var(--rz-forest); margin-bottom: 5px !important; }
-                  .rz-slist { font-size: 12.5px; line-height: 1.65; }
-
-                  .rz-summary { font-size: 13.5px; line-height: 1.6; }
-                  .rz-summary + .rz-personal { margin-top: 9px !important; color: var(--rz-muted); }
-
-                  .rz-item + .rz-item { margin-top: 17px; }
-                  .rz-rhead { display: flex; justify-content: space-between; align-items: baseline;
-                              gap: 16px; flex-wrap: wrap; }
-                  .rz-title { font-family: var(--rz-meta); font-size: 13px; font-weight: 700;
-                              letter-spacing: .04em; text-transform: uppercase; }
-                  .rz-date { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
-                             white-space: nowrap; font-variant-numeric: tabular-nums; }
-                  .rz-org { font-size: 13px; font-style: italic; color: var(--rz-forest-soft);
-                            margin-top: 1px !important; }
-
-                  .rz-pts { margin-top: 7px !important; padding-left: 17px !important; list-style: disc !important; }
-                  .rz-pts li { font-size: 13px; line-height: 1.52; margin-bottom: 4px; }
-                  .rz-pts li::marker { color: var(--rz-forest); }
-                  .rz-stack { font-family: var(--rz-meta); font-size: 11.5px; color: var(--rz-muted);
-                              margin-top: 6px !important; line-height: 1.55; }
-                  .rz-stack b { color: var(--rz-forest); font-weight: 700; letter-spacing: .06em; }
-                  .rz-stack a { color: var(--rz-forest); text-decoration: none;
-                                border-bottom: 1px solid var(--rz-rule); }
-                  .rz-stack a:hover { border-bottom-color: var(--rz-forest); }
-
-                  .rz-phead { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
-                  .rz-pname { font-family: var(--rz-meta); font-size: 13px; font-weight: 700; }
-                  .rz-plink { font-family: var(--rz-meta); font-size: 11px; color: var(--rz-forest);
-                              text-decoration: none; border-bottom: 1px solid var(--rz-rule); white-space: nowrap; }
-                  .rz-plink:hover { border-bottom-color: var(--rz-forest); }
-
-                  .rz a:focus-visible { outline: 2px solid var(--rz-forest); outline-offset: 3px; border-radius: 2px; }
-
-                  @media (max-width: 767px) {
-                    .rz { padding: 30px 22px 36px; }
-                    .rz-cols { grid-template-columns: 1fr; gap: 0; }
-                    .rz-main { border-left: 0; padding-left: 0; margin-top: 21px;
-                               padding-top: 19px; border-top: 1px solid var(--rz-rule); }
-                    .rz-aside { text-align: left; }
-                  }
-
-                  /* Printing the page yields the resume alone, nothing else. */
-                  @media print {
-                    #mainNav, .footer, .copyright, .page-section-heading,
-                    .divider-custom, .btn { display: none !important; }
-                    .page-section { padding: 0 !important; }
-                    .rz { box-shadow: none; padding: 0; max-width: none; background: #fff; }
-                  }
-                </style>
-
-                <div class="rz">
-
-                  <div class="rz-head">
-                    <h1 class="rz-name">
-                      <span class="g">Shawn</span>
-                      <span class="f">H. Xu</span>
-                    </h1>
-                    <div class="rz-aside">
-                      <div class="role">Data Scientist</div>
-                      <div>San Ramon, California</div>
-                    </div>
-                  </div>
-                  <hr class="rz-hr" />
-                  <p class="rz-tag">Data Science &middot; Machine Learning &middot; Analytics</p>
-
-                  <div class="rz-cols">
-
+                    <!-- ============ SIDEBAR ============ -->
                     <aside>
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Contact</h2>
-                        <ul class="rz-contact">
-                          <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" /><path d="m3 6 9 7 9-7" /></svg>
-                            <a href="mailto:xu.shawn7@gmail.com">xu.shawn7@gmail.com</a>
-                          </li>
-                          <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z" /></svg>
-                            <a href="tel:+19258586938">925-858-6938</a>
-                          </li>
-                          <li>
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.19 1.35-2.19 2.75V21h-4V9.5Z" /></svg>
-                            <a href="https://www.linkedin.com/in/shawn-xu22" target="_blank" rel="noopener">linkedin.com/in/shawn-xu22</a>
-                          </li>
-                          <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
-                            <span>San Ramon, CA 94582</span>
-                          </li>
-                        </ul>
-                      </section>
+                        <section class="rz-block">
+                            <h2 class="sec">Contact</h2>
+                            <ul class="contact">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2" /><path d="m3 6 9 7 9-7" /></svg>
+                                    <a href="mailto:xu.shawn7@gmail.com">xu.shawn7@gmail.com</a>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z" /></svg>
+                                    <a href="tel:+19258586938">925-858-6938</a>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.19 1.35-2.19 2.75V21h-4V9.5Z" /></svg>
+                                    <a href="https://www.linkedin.com/in/shawn-xu22/" target="_blank" rel="noopener">linkedin.com/in/shawn-xu22</a>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" /><circle cx="12" cy="10" r="2.5" /></svg>
+                                    <span>San Ramon, CA 94582</span>
+                                </li>
+                            </ul>
+                        </section>
 
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Education</h2>
-                        <div class="rz-edu">
-                          <p class="rz-deg">M.S. Data Science &amp; Analytics</p>
-                          <p class="rz-inst">Georgetown University</p>
-                          <p class="rz-emeta">Aug 2023 &ndash; Dec 2024 &middot; GPA 3.95 / 4.0</p>
-                        </div>
-                        <div class="rz-edu">
-                          <p class="rz-deg">B.S. Biomedical Engineering</p>
-                          <p class="rz-inst">Boston University</p>
-                          <p class="rz-emeta">Sept 2019 &ndash; May 2023 &middot; GPA 3.5 / 4.0</p>
-                          <p class="rz-emeta">Dean&rsquo;s List of Academic Honor</p>
-                        </div>
-                      </section>
+                        <section class="rz-block">
+                            <h2 class="sec">Education</h2>
+                            <div class="rz-edu">
+                                <p class="rz-deg">M.S. Data Science &amp; Analytics</p>
+                                <p class="rz-inst">Georgetown University</p>
+                                <p class="rz-emeta">Aug 2023 &ndash; Dec 2024 &middot; GPA 3.95 / 4.0</p>
+                            </div>
+                            <div class="rz-edu">
+                                <p class="rz-deg">B.S. Biomedical Engineering</p>
+                                <p class="rz-inst">Boston University</p>
+                                <p class="rz-emeta">Sept 2019 &ndash; May 2023 &middot; GPA 3.5 / 4.0</p>
+                                <p class="rz-emeta">Dean&rsquo;s List of Academic Honor</p>
+                            </div>
+                        </section>
 
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Skills</h2>
-                        <div class="rz-sg">
-                          <p class="rz-slabel">Programming</p>
-                          <p class="rz-slist">Python &middot; SQL &middot; R</p>
-                        </div>
-                        <div class="rz-sg">
-                          <p class="rz-slabel">Data &amp; Cloud</p>
-                          <p class="rz-slist">Databricks &middot; BigQuery &middot; GCP &middot; PySpark &middot; Spark</p>
-                        </div>
-                        <div class="rz-sg">
-                          <p class="rz-slabel">ML &amp; Analysis</p>
-                          <p class="rz-slist">PyTorch &middot; Scikit-Learn &middot; Pandas &middot; NumPy</p>
-                        </div>
-                        <div class="rz-sg">
-                          <p class="rz-slabel">Tooling</p>
-                          <p class="rz-slist">Git / GitHub &middot; VS Code</p>
-                        </div>
-                        <div class="rz-sg">
-                          <p class="rz-slabel">Spoken</p>
-                          <p class="rz-slist">English &middot; Mandarin (Conversational)</p>
-                        </div>
-                      </section>
+                        <section class="rz-block">
+                            <h2 class="sec">Skills</h2>
+                            <div class="rz-sg">
+                                <p class="rz-slabel">Programming</p>
+                                <p class="rz-slist">Python &middot; SQL &middot; R</p>
+                            </div>
+                            <div class="rz-sg">
+                                <p class="rz-slabel">Data &amp; Cloud</p>
+                                <p class="rz-slist">Databricks &middot; BigQuery &middot; GCP &middot; PySpark &middot; Spark</p>
+                            </div>
+                            <div class="rz-sg">
+                                <p class="rz-slabel">ML &amp; Analysis</p>
+                                <p class="rz-slist">PyTorch &middot; Scikit-Learn &middot; Pandas &middot; NumPy</p>
+                            </div>
+                            <div class="rz-sg">
+                                <p class="rz-slabel">Tooling</p>
+                                <p class="rz-slist">Git / GitHub &middot; VS Code</p>
+                            </div>
+                            <div class="rz-sg">
+                                <p class="rz-slabel">Spoken</p>
+                                <p class="rz-slist">English &middot; Mandarin (Conversational)</p>
+                            </div>
+                        </section>
                     </aside>
 
+                    <!-- ============ MAIN ============ -->
                     <div class="rz-main">
 
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Profile</h2>
-                        <p class="rz-summary">
-                          Data scientist with an M.S. in Data Science &amp; Analytics and a biomedical
-                          engineering background, working end-to-end from raw data through modeling
-                          to the services that put results in front of users.
-                        </p>
-                        <p class="rz-summary rz-personal">
-                          Away from the desk: rock climbing, traveling, and gaming &mdash; rogue-likes,
-                          FPS, and ARPGs. Also an active interest in quantitative finance.
-                        </p>
-                      </section>
+                        <section class="rz-block">
+                            <h2 class="sec">Profile</h2>
+                            <p class="prose">
+                                Data scientist with an M.S. in Data Science &amp; Analytics and a biomedical
+                                engineering background, working end-to-end from raw data through modeling
+                                to the services that put results in front of users.
+                            </p>
+                            <p class="prose prose-muted">
+                                Away from the desk: rock climbing, traveling, and gaming &mdash; rogue-likes,
+                                FPS, and ARPGs. Also an active interest in quantitative finance.
+                            </p>
+                        </section>
 
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Work Experience</h2>
+                        <section class="rz-block">
+                            <h2 class="sec">Work Experience</h2>
 
-                        <div class="rz-item">
-                          <div class="rz-rhead">
-                            <p class="rz-title">Data Scientist</p>
-                            <span class="rz-date">Dec 2024 &ndash; Present</span>
-                          </div>
-                          <p class="rz-org">Albertsons Companies Inc.</p>
-                          <ul class="rz-pts">
-                            <li>Own a large portion of the promotional planning data flow, connecting raw
-                                data sources, model outputs, and final forecasted decisions within a
-                                merchandising platform automating work for 400+ store managers.</li>
-                            <li>Implemented an LLM solution automating promotional execution, eliminating
-                                3 weeks of manual labor per cycle.</li>
-                            <li>Orchestrate pipelines over petabytes of multi-decade retail data
-                                (transactional, hierarchical, allowance, geographic) feeding downstream
-                                forecasting models.</li>
-                            <li>Built API backend services delivering ETL and model outputs to the platform,
-                                powering promotional scenario building, execution, change logging, and
-                                model explainability features.</li>
-                            <li>Partner with 5+ cross-functional teams spanning business analysts, modeling,
-                                promotion execution, frontend, and offshore engineering; onboard new members
-                                onto Databricks, GitHub Enterprise, and Confluence.</li>
-                          </ul>
-                          <p class="rz-stack"><b>Stack</b> &nbsp;Databricks (Lakeflow, Apps, AI/BI, Genie) &middot;
-                             PySpark &middot; BigQuery &middot; GCP &middot; Python &middot; SQL &middot; LLMs &middot; API Development</p>
-                        </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <p class="item-title">Data Scientist</p>
+                                    <span class="item-meta">Dec 2024 &ndash; Present</span>
+                                </div>
+                                <p class="item-org">Albertsons Companies Inc.</p>
+                                <ul class="pts">
+                                    <li>Own a large portion of the promotional planning data flow, connecting raw
+                                        data sources, model outputs, and final forecasted decisions within a
+                                        merchandising platform automating work for 400+ store managers.</li>
+                                    <li>Implemented an LLM solution automating promotional execution, eliminating
+                                        3 weeks of manual labor per cycle.</li>
+                                    <li>Orchestrate pipelines over petabytes of multi-decade retail data
+                                        (transactional, hierarchical, allowance, geographic) feeding downstream
+                                        forecasting models.</li>
+                                    <li>Built API backend services delivering ETL and model outputs to the platform,
+                                        powering promotional scenario building, execution, change logging, and
+                                        model explainability features.</li>
+                                    <li>Partner with 5+ cross-functional teams spanning business analysts, modeling,
+                                        promotion execution, frontend, and offshore engineering; onboard new members
+                                        onto Databricks, GitHub Enterprise, and Confluence.</li>
+                                </ul>
+                                <p class="stack"><b>Stack</b> &nbsp;Databricks (Lakeflow, Apps, AI/BI, Genie) &middot;
+                                    PySpark &middot; BigQuery &middot; GCP &middot; Python &middot; SQL &middot; LLMs &middot; API Development</p>
+                            </div>
 
-                        <div class="rz-item">
-                          <div class="rz-rhead">
-                            <p class="rz-title">Data Analyst</p>
-                            <span class="rz-date">May 2024 &ndash; Dec 2024</span>
-                          </div>
-                          <p class="rz-org">Data Annotation Tech</p>
-                          <ul class="rz-pts">
-                            <li>Engineered code-related prompts for LLM training and evaluated chatbot
-                                responses for accuracy, reasoning, and coding quality.</li>
-                          </ul>
-                          <p class="rz-stack"><b>Stack</b> &nbsp;Python &middot; Prompt Engineering &middot; RLHF &middot;
-                             LLMs &middot; Error Analysis</p>
-                        </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <p class="item-title">Data Analyst</p>
+                                    <span class="item-meta">May 2024 &ndash; Dec 2024</span>
+                                </div>
+                                <p class="item-org">Data Annotation Tech</p>
+                                <ul class="pts">
+                                    <li>Engineered code-related prompts for LLM training and evaluated chatbot
+                                        responses for accuracy, reasoning, and coding quality.</li>
+                                </ul>
+                                <p class="stack"><b>Stack</b> &nbsp;Python &middot; Prompt Engineering &middot; RLHF &middot;
+                                    LLMs &middot; Error Analysis</p>
+                            </div>
 
-                        <div class="rz-item">
-                          <div class="rz-rhead">
-                            <p class="rz-title">Student Researcher / Intern</p>
-                            <span class="rz-date">May &ndash; July 2022</span>
-                          </div>
-                          <p class="rz-org">Dana&ndash;Farber Cancer Institute / Harvard Medical School</p>
-                          <ul class="rz-pts">
-                            <li>Profiled synthetic protein degraders via functional proteomics and genomics,
-                                supporting discovery of molecular glues that kill cancer cells.</li>
-                          </ul>
-                          <p class="rz-stack"><b>Publication</b> &nbsp;Co-author, <em>Nature Chemical Biology</em> &middot;
-                             <a href="https://doi.org/10.1038/s41589-024-01668-4" target="_blank" rel="noopener">10.1038/s41589-024-01668-4</a></p>
-                        </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <p class="item-title">Student Researcher / Intern</p>
+                                    <span class="item-meta">May &ndash; July 2022</span>
+                                </div>
+                                <p class="item-org">Dana&ndash;Farber Cancer Institute / Harvard Medical School</p>
+                                <ul class="pts">
+                                    <li>Profiled synthetic protein degraders via functional proteomics and genomics,
+                                        supporting discovery of molecular glues that kill cancer cells.</li>
+                                </ul>
+                                <p class="stack"><b>Publication</b> &nbsp;Co-author, <em>Nature Chemical Biology</em> &middot;
+                                    <a href="https://doi.org/10.1038/s41589-024-01668-4" target="_blank" rel="noopener">10.1038/s41589-024-01668-4</a></p>
+                            </div>
 
-                      </section>
+                        </section>
 
-                      <section class="rz-block">
-                        <h2 class="rz-sec">Projects</h2>
+                        <section class="rz-block">
+                            <h2 class="sec">Projects</h2>
 
-                        <div class="rz-item">
-                          <div class="rz-phead">
-                            <p class="rz-pname">Skin Cancer Detection &mdash; Image &amp; Tabular Data</p>
-                            <a class="rz-plink" href="https://github.com/shawnhxu/SCD_with_3D-TBP" target="_blank" rel="noopener">GitHub</a>
-                          </div>
-                          <ul class="rz-pts">
-                            <li>Classified malignant vs. benign skin lesions from 3D total-body images and
-                                tabular data using CNNs and gradient-boosted trees; achieved &gt;90% accuracy.</li>
-                            <li>Countered severe class imbalance with under/over-sampling and ensembled
-                                model predictions across architectures.</li>
-                          </ul>
-                          <p class="rz-stack"><b>Stack</b> &nbsp;PyTorch &middot; CatBoost &middot; LightGBM &middot; ResNet &middot;
-                             EfficientNetB4 &middot; Ensembling &middot; Cross-Validation &middot; pAUC</p>
-                        </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <p class="item-title">Skin Cancer Detection &mdash; Image &amp; Tabular Data</p>
+                                    <a class="item-link" href="https://github.com/shawnhxu/SCD_with_3D-TBP" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <ul class="pts">
+                                    <li>Classified malignant vs. benign skin lesions from 3D total-body images and
+                                        tabular data using CNNs and gradient-boosted trees; achieved &gt;90% accuracy.</li>
+                                    <li>Countered severe class imbalance with under/over-sampling and ensembled
+                                        model predictions across architectures.</li>
+                                </ul>
+                                <p class="stack"><b>Stack</b> &nbsp;PyTorch &middot; CatBoost &middot; LightGBM &middot; ResNet &middot;
+                                    EfficientNetB4 &middot; Ensembling &middot; Cross-Validation &middot; pAUC</p>
+                            </div>
 
-                        <div class="rz-item">
-                          <div class="rz-phead">
-                            <p class="rz-pname">StarCraft II Player Performance Analysis</p>
-                            <a class="rz-plink" href="https://github.com/5cminsuhlim/DSAN5300Proj" target="_blank" rel="noopener">GitHub</a>
-                          </div>
-                          <ul class="rz-pts">
-                            <li>Analyzed in-game telemetry from StarCraft II players to model skill rating
-                                (rank) and Actions per Minute.</li>
-                            <li>Benchmarked classification models and applied statistical testing to identify
-                                the strongest predictors of player skill.</li>
-                          </ul>
-                          <p class="rz-stack"><b>Stack</b> &nbsp;Python &middot; R &middot; ANOVA &middot; T-testing &middot;
-                             Logistic Regression &middot; SVM &middot; Random Forest &middot; XGBoost &middot; SMOTE</p>
-                        </div>
+                            <div class="item">
+                                <div class="item-head">
+                                    <p class="item-title">StarCraft II Player Performance Analysis</p>
+                                    <a class="item-link" href="https://github.com/5cminsuhlim/DSAN5300Proj" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <ul class="pts">
+                                    <li>Analyzed in-game telemetry from StarCraft II players to model skill rating
+                                        (rank) and Actions per Minute.</li>
+                                    <li>Benchmarked classification models and applied statistical testing to identify
+                                        the strongest predictors of player skill.</li>
+                                </ul>
+                                <p class="stack"><b>Stack</b> &nbsp;Python &middot; R &middot; ANOVA &middot; T-testing &middot;
+                                    Logistic Regression &middot; SVM &middot; Random Forest &middot; XGBoost &middot; SMOTE</p>
+                            </div>
 
-                      </section>
+                            <p class="stack no-print" style="margin-top: 14px;">
+                                <a href="projects.html">More projects &rarr;</a>
+                            </p>
+
+                        </section>
 
                     </div>
-                  </div>
                 </div>
-
             </div>
-        </section>
+        </main>
 
-
-
-
-
-       
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            San Ramon, CA
-                            <br />
-
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Profiles</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/shawnhxu" target="_blank"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/shawn-xu22/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">My Contacts</h4>
-                        <p class="lead mb-0">
-                            xu.shawn7@gmail.com
-                            <br/>
-                            (925) 858-6938
-                        </p>
-                    </div>
-                </div>
+        <!-- Footer -->
+        <footer class="foot">
+            <div class="foot-inner">
+                <span>&copy; Shawn Xu 2026</span>
+                <span><a href="mailto:xu.shawn7@gmail.com">xu.shawn7@gmail.com</a></span>
+                <span class="foot-social">
+                    <a href="https://github.com/shawnhxu" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-.95-.01-1.86-3.06.66-3.7-1.3-3.7-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.69 1.14 1.69 1.14.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.47-2.45-.28-5.02-1.23-5.02-5.45 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.4.11-2.92 0 0 .93-.3 3.03 1.13a10.5 10.5 0 0 1 5.52 0c2.1-1.43 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.71.77 1.13 1.76 1.13 2.96 0 4.23-2.58 5.16-5.03 5.44.39.34.74 1.01.74 2.04 0 1.48-.01 2.66-.01 3.03 0 .29.2.64.76.53a10.53 10.53 0 0 0 7.51-10.41C23.02 5.24 18.27.5 12 .5Z" /></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shawn-xu22/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.2c0-1.24-.02-2.84-1.9-2.84-1.9 0-2.19 1.35-2.19 2.75V21h-4V9.5Z" /></svg>
+                    </a>
+                </span>
             </div>
         </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Shawn Xu 2026</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
